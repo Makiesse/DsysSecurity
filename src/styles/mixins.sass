@@ -1,0 +1,26 @@
+@use 'variables'
+
+@mixin btn
+  padding: .8rem 1rem
+  color: variables.$bg-color
+  background: variables.$gradient
+  text-decoration: none
+  border-radius: 3rem
+  font-weight: 600
+  transition: .5s
+
+  &:hover
+    background: variables.$gradient-invers
+    transition: .5s
+
+@mixin center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin gradient-border
+  content: ""
+  background: variables.$gradient
+  height: 3px
+  width: 30%
+  
